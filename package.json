@@ -1,0 +1,27 @@
+{
+    "author": "IMGH PRODCUTIONS",
+    "dependencies": {},
+    "keywords": [],
+    "name": "smartstrap_test",
+    "pebble": {
+        "capabilities": [
+            ""
+        ],
+        "displayName": "smartstrap_test",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt"
+        ],
+        "uuid": "01a34a81-80b3-43ea-ac5c-f7eab0f67ae0",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
