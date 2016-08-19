@@ -3,7 +3,7 @@
 // MLX sensor setup
 #include <Wire.h>
 #include <MLX90614.h>
-MLX90614 mlx = MLX90614(MLX90614_BROADCASTADDR);      // *** must be only one device on bus ***
+MLX90614 mlx = MLX90614(MLX90614_I2CDEFAULTADDR);      // *** must be only one device on bus ***
 uint16_t to1, ta;
 //
 
@@ -18,6 +18,7 @@ void setup() {
   Serial.begin(115200);
   mlx.begin();  
   const uint8_t PEBBLE_PIN = 2;
+
   ArduinoPebbleSerial::begin_software(PEBBLE_PIN, pebble_buffer, sizeof(pebble_buffer), Baud57600,
                                       SUPPORTED_SERVICES, NUM_SERVICES);
 }
@@ -48,6 +49,7 @@ void loop() {
   //read temperature:
   to1 = mlx.read16(MLX90614_TOBJ1);
   ta = mlx.read16(MLX90614_TA);
+  Serial.println(to1);
   //
 
   static bool is_connected = false;
