@@ -49,7 +49,7 @@ void loop() {
   //read temperature:
   to1 = mlx.read16(MLX90614_TOBJ1);
   ta = mlx.read16(MLX90614_TA);
-  Serial.println(to1);
+//  Serial.println(to1);
   //
 
   static bool is_connected = false;
