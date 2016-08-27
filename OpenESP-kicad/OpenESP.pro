@@ -1,4 +1,4 @@
-update=Friday, August 26, 2016 'PMt' 01:24:43 PM
+update=Saturday, August 27, 2016 'PMt' 04:02:15 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=lib
@@ -62,3 +72,4 @@ LibName30=lib/503552-1220
 LibName31=lib/RO_JST-SH/JST-SH
 LibName32=lib/SN74LVC1G07
 LibName33=lib/SP6641
+LibName34=lib/NCP551
